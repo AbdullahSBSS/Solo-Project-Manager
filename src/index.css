@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f8f7f5;
+  --color-background-tertiary: #f1efe8;
+  --color-border-secondary: #d3d1c7;
+  --color-border-tertiary: #e2e0da;
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #5f5e5a;
+  --color-text-tertiary: #9f9d97;
+}
+
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background: var(--color-background-tertiary);
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
